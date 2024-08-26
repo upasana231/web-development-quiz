@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #140904;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("MAIN.jpg");
+    /* background-color: #6c757d; */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Apply blur to background only */
+    z-index: -1; /* Ensure it is behind other content */
+}
+
+#content {
+    position: relative;
+    z-index: 1; /* Ensure content is above the blurred background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#start-container {
+    text-align: center;
+
+}
+
+#start-btn {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: 2px solid #007bff;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#start-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#start-btn:active {
+    background-color: #003d82;
+    transform: scale(1.02);
+}
+
+#quiz-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#question-box {
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#options-container {
+    padding: 0;
+    margin: 20px 0;
+}
+
+#options-container button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#options-container button:hover {
+    background-color: #e9ecef;
+}
+
+#options-container button.correct {
+    background-color: #28a745;
+    color: white;
+    border: 2px solid #28a745;
+}
+
+#options-container button.wrong {
+    background-color: #dc3545;
+    color: white;
+    border: 2px solid #dc3545;
+}
+
+#feedback {
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#explanation {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#timer {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #6c757d;
+}
+
+#next-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 2px solid #28a745;
+    background-color: #28a745;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: none; /* Hidden initially */
+}
+
+#next-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+#next-btn:active {
+    background-color: #1e7e34;
+    transform: scale(1.02);
+}
+
+#retry-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    /* display: none; Hidden initially */
+}
+
+#retry-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#retry-btn:active {
+    background-color: #003d82;
+    transform: scale(1.02);
+}
+
+.hidden {
+    display: none;
+}
+
+#result-container {
+    text-align: center;
+    color: #fff;
+}
+
+.party-popper {
+    font-size: 60px;
+    margin-top: 20px;
+    color: #ff6f61;
+}
+/* Add this to the existing CSS */
+
+#name-input {
+    text-align: center;
+}
+
+#name-input input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#name-input button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#name-input button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#name-input button:active {
+    background-color: #003d82;
+    transform: scale(1.02);
+}
+
+#welcome-message {
+    margin-bottom: 20px;
+}
+
+#document-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#document-link a:hover {
+    text-decoration: underline;
+}
+
+
+button{
+    font-size: 20px;
+    border-radius: 8px;
+    color: #140101;
+    transition: all 0.3s ease;
+    background-color: #ff6f61;
+    border: none;
+}
+button:hover{
+    background-color: #dc3545;
+}
+h2{
+    color: #19c2b4;
+}
